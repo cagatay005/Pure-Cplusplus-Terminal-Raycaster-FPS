@@ -1,0 +1,10 @@
+# Binary ve Objeler
+*.o
+fps_oyun
+ses_uretici
+
+# Ses Dosyaları
+sesler/*.wav
+
+# VS Code / IDE ayarları
+.vscode/
