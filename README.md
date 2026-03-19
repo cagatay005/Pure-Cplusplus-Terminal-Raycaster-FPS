@@ -18,7 +18,7 @@ Bu motor, klasik Ray Casting algoritmasını kullanarak 2D harita verilerini ter
 * **HUD ve Arayüz:** Skor, mermi ve can durumunu gösteren, can azaldığında renk değiştiren dinamik bir bilgi paneli eklendi.
 
 ### Oyun İçi Görünüm
-![Oyun İçi Görüntü](game_preview.gif)
+![Oyun İçi Görüntü]<img src="game_preview.gif" width="800">
 
 ### Kurulum ve Çalıştırma
 1.  **Sesleri Üret:** `g++ ses_uretici.cpp -o ses_uretici && ./ses_uretici`
@@ -47,7 +47,7 @@ A high-performance demonstration of low-level algorithms and C++ efficiency. Thi
 * **HUD & Interface:** Real-time display for Health, Score, and Ammo with dynamic color alerts for low health.
 
 ### Gameplay Preview
-![Gameplay Preview](game_preview.gif)
+![Gameplay Preview]<img src="game_preview.gif" width="800">
 
 ### Installation & Execution
 1.  **Synthesize Audio:** `g++ ses_uretici.cpp -o ses_uretici && ./ses_uretici`
