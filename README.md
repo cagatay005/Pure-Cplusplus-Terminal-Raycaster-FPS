@@ -32,6 +32,18 @@ Bu motor, klasik Ray Casting algoritmasını kullanarak 2D harita verilerini ter
 * **Q:** Oyundan Çıkış
 
 ---
+## Teknik Dokümantasyon ve Matematiksel Altyapı
+
+Projenin arkasındaki tüm mühendislik detaylarını, el yazısı notlarım ve formüllerle birlikte aşağıda bulabilirsiniz:
+
+**[Teknik Notlar: Raycasting, DDA ve Prosedürel Ses (PDF)](./Raycast.pdf)**
+
+### Notlarda Neler Var?
+* [cite_start]**Raycasting Motoru:** Mesafe hesaplama ($h = H/d$) ve balık gözü (fish-eye) düzeltme formülleri[cite: 90, 97].
+* [cite_start]**Prosedürel Ses Sentezi:** Silah ateşleme ve darbe seslerinin sinüs dalgaları ve frekans kayması ($f(t)$) ile matematiksel üretimi[cite: 81, 85, 104].
+* [cite_start]**DDA Algoritması:** Mermi takibi ve duvar çarpışma kontrollerinin ızgara (grid) üzerindeki mantığı[cite: 115, 143].
+* [cite_start]**Fizik ve Hareket:** Bakış açısına göre trigonometrik konum güncelleme ($x', y'$) ve $dt$ (Delta Time) yönetimi[cite: 136, 137].
+* [cite_start]**Oyun Döngüsü:** Giriş, fizik güncelleme ve render akış şeması [cite: 156-161].
 
 ## DESCRIPTION
 
@@ -61,4 +73,18 @@ A high-performance demonstration of low-level algorithms and C++ efficiency. Thi
 * **Q:** Quit Game
 
 ---
+## Technical Documentation & Mathematical Foundation
+
+This project is built from scratch without external graphics libraries. You can find the complete engineering breakdown, including handwritten notes and formulas, in the following document:
+
+**[Technical Notes: Raycasting, DDA & Procedural Audio (PDF)](./Raycast.pdf)**
+
+### What's Inside?
+* [cite_start]**Raycasting Engine:** Core mechanics of 3D projection using distance-to-height ratios ($h = H/d$) [cite: 16, 90] [cite_start]and fish-eye effect correction using $d_{\text{corrected}} = d \cdot \cos(\alpha - \beta)$[cite: 23, 97].
+* [cite_start]**Procedural Audio Synthesis:** Real-time generation of gunshot effects via linear pitch sliding ($f(t) = f_{\text{start}} - (k \cdot t)$) [cite: 26, 100] [cite_start]and impact sounds using exponential amplitude decay ($A(t) = A_0 \cdot e^{-\lambda t}$)[cite: 34, 108].
+* [cite_start]**DDA Algorithm:** Precise bullet tracking and wall collision detection by stepping through the 2D grid[cite: 115, 143, 144].
+* [cite_start]**Physics & Movement:** Trigonometric position updates ($x', y'$) calculated with Delta Time ($dt$) for frame-independent movement[cite: 136, 137].
+* [cite_start]**Entity Hitboxes:** Collision logic for enemies using Euclidean distance: $\sqrt{(Mx - ex)^2 + (My - ey)^2} < r$[cite: 57, 147].
+* [cite_start]**System Architecture:** Detailed Game Loop breakdown (Input → Physics Update → Raycast Render → Terminal Output) [cite: 156-161].
+
 **Geliştirici / Developer:** Mustafa Cagatay OZDEM
